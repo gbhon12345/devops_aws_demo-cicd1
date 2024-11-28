@@ -12,12 +12,8 @@ phases:
       - cp index.html /var/www/html/
   post_build:
     commands:
-      - echo configuring nginx
+       - zip -r artifact.zip .
 
-     
 artifacts:
   files:
-    - /var/www/html/index.html
-    - appspec.yml
-    - scripts/start_nginx.sh
-    - scripts/install_nginx.sh
+    - artifact.zip
