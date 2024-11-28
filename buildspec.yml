@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo configuring nginx
-      - aws s3 cp index.html s3://gbhnewbuckets3 --region us-east-1 --acl public-read
+
      
 artifacts:
   files:
