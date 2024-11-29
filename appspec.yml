@@ -1,7 +1,8 @@
 version : 1:0
+
 os : Linux
 files :
-  - sources : /index.html
+  - sources : /
     destination : /var/www/html/
 
 hooks :
