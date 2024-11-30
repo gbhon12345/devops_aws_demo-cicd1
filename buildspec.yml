@@ -12,8 +12,8 @@ phases:
       - cp index.html /var/www/html/
   post_build:
     commands:
-       - zip -r artifact.zip .
+       - echo CONFIGURING NGINX..
 
 artifacts:
   files:
-    - artifact.zip
+    - '**/*'
